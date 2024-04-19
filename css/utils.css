@@ -18,9 +18,16 @@
     flex-direction: column !important;
 }
 .gray{
-    /* color: gray; */
+    text-align: justify !important;
+    color: gray;
     font-size: 15px;
+    width: 80%;
+    margin: 10px 0;
 }
 .w-100{
     width: 100% !important;
+}
+.f-25{
+    font-size: 25px;
+    margin-bottom: 0 !important;
 }

@@ -56,7 +56,10 @@ nav ul li a:hover {
   color: rgb(54, 238, 30);
   border-bottom: 2px solid rgb(54, 238, 30);
 }
-
+section {
+  scroll-snap-align: center;
+  height: 100vh; /* Ensure sections fill the viewport */
+}
 .container {
   display: flex;
   justify-content: center;
@@ -64,6 +67,10 @@ nav ul li a:hover {
   font-family: var(--poppins-regular);
   text-align: center;
   position: relative;
+  scroll-snap-type: y mandatory;
+  scroll-snap-type: y mandatory;
+  overflow-y: auto; /* Ensure vertical scrolling */
+  height: 100vh;
 }
 
 .content {
@@ -93,13 +100,31 @@ nav ul li a:hover {
   background-color: rgba(0, 0, 0, 0.5);
 }
 .head-font {
-  font-family: var(--jersey-25-regular);
-  font-size: 40px;
+  font-family: var(--poppins-regular);
+  /* font-family: var(--jersey-25-regular); */
+  font-size: 30px;
   margin-bottom: 20px;
 }
-
+/* Memorials Section Here */
+.imgContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.imgContainer img {
+  aspect-ratio: 16/9;
+  cursor: pointer;
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  border-radius: 50%;
+  border: 5px solid rgb(54, 238, 30);
+  cursor: pointer;
+  margin-top: 80px;
+}
 /* Visit Section */
-.content-left{
+.content-left {
   width: 50%;
   margin: auto;
   padding: 20px;
@@ -108,27 +133,27 @@ nav ul li a:hover {
   text-align: center;
   border-right: 2px solid rgb(54, 238, 30);
 }
-.content-left iframe{
+.content-left iframe {
   border-radius: 10px;
 }
-.content-left iframe:hover{
+.content-left iframe:hover {
   box-shadow: rgba(0, 0, 0, 0.5);
 }
-.content-right{
+.content-right {
   margin: auto;
-  width: 45%;
+  width: 40%;
   padding: 20px;
   font-family: var(--poppins-regular);
   font-size: 20px;
   text-align: center;
 }
-.content-right form{
+.content-right form {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
 }
-.content-right form input{
+.content-right form input {
   width: 100%;
   padding: 10px;
   margin: 10px 0;
@@ -137,7 +162,7 @@ nav ul li a:hover {
   outline: none;
   background-color: rgb(228, 224, 224);
 }
-.content-right form textarea{
+.content-right form textarea {
   width: 100%;
   padding: 10px;
   margin: 10px 0;
@@ -146,7 +171,7 @@ nav ul li a:hover {
   outline: none;
   background-color: rgb(228, 224, 224);
 }
-.content-right form button{
+.content-right form button {
   width: 100%;
   padding: 10px;
   margin: 10px 0;
@@ -159,8 +184,8 @@ nav ul li a:hover {
   font-size: 20px;
   cursor: pointer;
 }
-.content-right form button:hover{
-  background-color: white;
+.content-right form button:hover {
+  background-color: rgb(228, 224, 224);
   color: rgb(54, 238, 30);
 }
 
@@ -174,4 +199,3 @@ footer {
   padding: 20px 0;
   width: 100%;
 }
-
