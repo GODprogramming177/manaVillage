@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Jersey+25&family=Madimi+One&family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --jersey-25-regular: "Jersey 25", sans-serif;
+  --poppins-regular: "Poppins", sans-serif;
+  --madimi-one-regular: "Madimi One", sans-serif;
+}
+::selection {
+  color: rgb(54, 238, 30);
+  background-color: white;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  top: 0;
+  left: 0;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: black;
+  width: 100%;
+  padding: 10px 0;
+  font-family: var(--poppins-regular);
+  z-index: 1000;
+  height: 60px;
+}
+
+.left {
+  color: rgb(54, 238, 30);
+  font-size: 30px;
+  margin-left: 20px;
+  font-family: var(--madimi-one-regular);
+  font-weight: bold;
+}
+nav ul {
+  display: flex;
+}
+nav ul li {
+  list-style: none;
+  margin-right: 20px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+}
+nav ul li a:hover {
+  color: rgb(54, 238, 30);
+  border-bottom: 2px solid rgb(54, 238, 30);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--poppins-regular);
+  text-align: center;
+  position: relative;
+}
+
+.content {
+  width: 80%;
+  margin: 80px auto 0; /* Adjusted margin-top to avoid overlap */
+}
+
+.background-image::before {
+  content: "";
+  background-image: url(../images/village-1-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  filter: brightness(0.6);
+}
+
+.background-image {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: -1;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.head-font {
+  font-family: var(--jersey-25-regular);
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+/* Visit Section */
+.content-left{
+  width: 50%;
+  margin: auto;
+  padding: 20px;
+  font-family: var(--poppins-regular);
+  font-size: 20px;
+  text-align: center;
+  border-right: 2px solid rgb(54, 238, 30);
+}
+.content-left iframe{
+  border-radius: 10px;
+}
+.content-left iframe:hover{
+  box-shadow: rgba(0, 0, 0, 0.5);
+}
+.content-right{
+  margin: auto;
+  width: 45%;
+  padding: 20px;
+  font-family: var(--poppins-regular);
+  font-size: 20px;
+  text-align: center;
+}
+.content-right form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.content-right form input{
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  background-color: rgb(228, 224, 224);
+}
+.content-right form textarea{
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  background-color: rgb(228, 224, 224);
+}
+.content-right form button{
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  background-color: rgb(54, 238, 30);
+  color: white;
+  font-family: var(--poppins-regular);
+  font-size: 20px;
+  cursor: pointer;
+}
+.content-right form button:hover{
+  background-color: white;
+  color: rgb(54, 238, 30);
+}
+
+/* Footer Section */
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-family: var(--poppins-regular);
+  position: relative;
+  padding: 20px 0;
+  width: 100%;
+}
+

@@ -1,0 +1,26 @@
+.h-100{
+    height: 100vh !important;
+}
+.color-green{
+    color: rgb(54, 238, 30);
+    font-size: 20px;
+    font-weight: bold;
+}
+.color-white{
+    color: white;
+}
+.d-flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.fc{
+    flex-direction: column !important;
+}
+.gray{
+    /* color: gray; */
+    font-size: 15px;
+}
+.w-100{
+    width: 100% !important;
+}
